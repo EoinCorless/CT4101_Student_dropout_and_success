@@ -5,6 +5,7 @@ Required Packages:
 pathlib
 pandas
 os
+sklearn
 
 Enviroment:
 Overall folder is CT4101_Student_dropout_and_success, and the python files
