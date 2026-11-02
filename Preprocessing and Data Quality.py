@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 #Global Variables
-AUDIT_FOLDER = Path("Datasets/Preprocessed Data")
+PREPROCESSED_FOLDER = Path("Datasets/Preprocessed Data")
 RAW_DATA_PATH = Path("Datasets/Raw Data/data.csv")
 
 #Functions
@@ -15,7 +15,7 @@ def create_folder(folder_name):
         print(f"Folder '{folder_name}' already exists.")
         
 #Creates output folder
-create_folder(AUDIT_FOLDER)
+create_folder(PREPROCESSED_FOLDER)
 
 #      _____                                            _               _____ _            _ _            
 #     |  __ \                                          (_)             |  __ (_)          | (_)           
