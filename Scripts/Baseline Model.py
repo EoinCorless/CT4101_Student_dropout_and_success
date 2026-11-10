@@ -5,12 +5,11 @@ print("\n\n\n"
 #Imports
 import os
 import sys
+import pandas as pd
 from pathlib import Path
-from sklearn.model_selection import train_test_split
 from sklearn.dummy import DummyClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
-import pandas as pd
 
 #Functions
 def check_for_folder(folder_name):
@@ -48,11 +47,11 @@ print("Testing data:", test_df.shape)
 print("\n")
 
 #Training data
-x_train = train_df.drop("Target", axis=1)
+x_train = train_df.drop("Target", axis=1) #Axis 1 to operate on columns, not rows
 y_train = train_df["Target"]
 
 #Testing data
-x_test = test_df.drop("Target", axis=1)
+x_test = test_df.drop("Target", axis=1) #Axis 1 to operate on columns, not rows
 y_test = test_df["Target"]
 
 #      ____                 _ _              __  __           _      _ 
